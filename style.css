@@ -14,11 +14,11 @@
     --white: #FFFF;
 }
 
-hidden{
+.hidden{
     display: none;
 }
-removeHidden{
-    display: flex;
+.removeHidden{
+    display: flex !important;
 }
 
 body{
@@ -119,6 +119,7 @@ article{
 .share{
     color: var(--Grayish-Blue);
     display: none;
+    transition: 0.3s ease-in-out;
     background-color: var(--Very-Dark-Grayish-Blue);
     padding: 2em;
     justify-content: space-between;
@@ -178,21 +179,18 @@ article{
     }
 
     /*--share-button-on-hover--*/
-
+    .share-svg:active{
+        background-color: var(--Very-Dark-Grayish-Blue);
+    }
+    /* .share-1:hover{
+        fill: var(--white);
+    } */
     .share-svg-2{
         display: none;
     }
 
     .share{
-        display: flex;
-        padding: 2em;
-        justify-content: space-between;
-        position: relative;
-        
-    }
-
-    .share{
-        display: flex;
+        display: none;
         padding: 1em 2.3em;
         justify-content: space-between;
         z-index: 3;
@@ -234,7 +232,7 @@ article{
     }
     .article-content{
         height: 100%;
-        padding: 2em 2.5em;
+        padding: 2.2em 2.5em;
     }
 
     #hero-img{
