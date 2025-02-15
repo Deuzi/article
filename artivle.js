@@ -9,7 +9,7 @@ function checkMediaQuery() {
     creatorsProfile.style.display = 'flex';
     shareButton.onclick = () => {
       shareSection.classList.toggle('removeHidden');
-      console.log(shareSection);
+      // console.log(shareSection);
     };
   } else {
     shareButton.onclick = () => {

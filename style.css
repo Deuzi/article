@@ -79,7 +79,7 @@ article{
 #creators-pfp{
     display: flex;
     justify-content: space-between;
-    margin-top: 1em;
+    margin-top: 1.3em;
 }
 #creators-detail{
     display: flex;
@@ -121,8 +121,9 @@ article{
     display: none;
     transition: 0.3s ease-in-out;
     background-color: var(--Very-Dark-Grayish-Blue);
-    padding: 2em;
+    padding: 1.5em 2em;
     justify-content: space-between;
+    align-items: center;
 }
 
 
@@ -131,7 +132,7 @@ article{
 }
 
 .social-imgs{
-    margin-left: 1.2em;
+    margin-left: 3em;
 }
 
 .social-imgs svg{
@@ -139,8 +140,15 @@ article{
     cursor: pointer;
 }
 
+.share-svg-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
 .share-2{
-    margin: 0.9em;
+    margin: 0.6em; 
 }
 
 .share-svg-2{
@@ -182,9 +190,11 @@ article{
     .share-svg:active{
         background-color: var(--Very-Dark-Grayish-Blue);
     }
-    /* .share-1:hover{
+    
+    .share-svg:active svg{
         fill: var(--white);
-    } */
+    }
+    
     .share-svg-2{
         display: none;
     }
@@ -210,8 +220,8 @@ article{
         border-bottom: 13px solid var(--Very-Dark-Grayish-Blue); 
         transform: rotate(180deg);
         position: absolute;
-        left: 7.8em;
-        margin-top: 2.7em;
+        left: 9.3em;
+        margin-top: 4.5em;
         z-index: 4;
         /* box-shadow: 0px 4px 10px var(--Light-Grayish-Blue); */
     }
